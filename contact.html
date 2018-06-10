@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalmar-RT | Contact Us</title>
+    <link rel='stylesheet' href="css/kalmar.css">
+    <link rel="icon" href="img/icon.jpg">
+</head>
+
+<body>
+    <div class='parentcontainer'>
+        <nav>
+            <ul class='navcontainer'>
+                <li><a href="kalmarhome.html"></a>Home</li>
+                <li><a href="products.html"></a>Products</li>
+                <li>About<a href='about.html'></a>
+                </li>
+                <li>Kalmar Global</li>
+                <li>Contact Us<a href="contact.html"></a></li>
+            </ul>
+        </nav>
+        <div class='background'></div>
+        <div class='aboutcontainer'>
+            <div class='contactimg'></div>
+            <div class='contactbox'>
+                <div id="googleMap"></div>
+                <div class="container">
+                    <div style="text-align:left">
+                        <h2>Contact Us</h2>
+                            <p>We strive for excellence, let us know how we can improve:</p>
+                    </div>
+                    <div class="row">
+                    <div class="column"></div>
+                    </div>
+                    <div class="column">
+                    <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname"><br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname"><br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="usa">USA</option>
+                      <option value="canada">Canada</option>
+                      <option value="mexico">Mexico</option>
+                    </select><br>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Leave us a note" style="height:203px"></textarea><br>
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            </div>
+            </div>    
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJEE0erT85AEBfk7cnecs0oyoG3MTNf84&callback=myMap"></script>
+
+        </div>
+	</body>
+</html>
+
+<!-- AIzaSyCJEE0erT85AEBfk7cnecs0oyoG3MTNf84 -->
